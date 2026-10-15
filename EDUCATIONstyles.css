@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Ledger&family=Lily+Script+One&family=Permanent+Marker&display=swap');
+body{
+  background-color: #000000;
+  background-image: url("Background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#welcome {
+  text-align: center;
+  font-size: 50px;
+  color: #373535;
+  font-family: "Lily Script One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+table {
+  .ledger-regular {
+  font-family: "Ledger", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(252, 252, 252, 0.177);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+td{
+  border: none;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  padding: 15px;
+  color: #fefefe;
+  text-align: center;
+}
+td:last-child,th:last-child {
+  border-right: none;
+}
+tr:last-child td,tr:last-child th {
+  border-bottom: none;
+}
+th{
+  border: none;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  padding: 15px;
+  color: #fefefe;
+  text-align: center;
+  background-color: rgba(153, 205, 50, 0.333);
+}
+

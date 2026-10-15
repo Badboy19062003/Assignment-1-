@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+nav{
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
+  border-radius: 70px;
+  border: 0 6px 6px solid rgba(255, 255, 255, 0.5);
+  box-shadow:  0 6px 6px rgba(0, 0, 0, 0.5);
+}
+nav ul{
+  list-style: none; /* it removes the default bullet points */
+  display: flex; /* it enables flexbox layout to align items horizontally */
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+a{
+  text-decoration: none; /* it removes the default underline from the links */
+  color: #C7DB94;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+a::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+a:hover::after{
+  left: 0;
+  width: 100%;
+}
+a:hover{
+  color: #ffffff;
+}
